@@ -6,5 +6,5 @@ fi
 docker build \
   $DOCKER_ARGS \
   -f ${DOCKERFILE:-Dockerfile} \
-  -t "$DOCKER_IMAGE:$CI_COMMIT_REF_NAME" \
+  -t $DOCKER_IMAGE:$CI_COMMIT_REF_NAME \
   .
