@@ -1,0 +1,17 @@
+types:
+  sh:
+    command: ["sh", "?"]
+    extensions: ["sh"]
+
+recipes:
+  login:
+    help: "Log in to GitLab container registry"
+    type: "sh"
+
+  build:
+    help: "Build the image"
+    type: "sh"
+
+  push:
+    help: "Push the image"
+    type: "sh"
