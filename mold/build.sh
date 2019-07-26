@@ -6,5 +6,5 @@ fi
 docker build \
   $DOCKER_ARGS \
   -f ${DOCKERFILE:-Dockerfile} \
-  -t "$CI_REGISTRY_IMAGE$IMAGE:$CI_COMMIT_REF_SLUG"
+  -t "$CI_REGISTRY_IMAGE$IMAGE:$CI_COMMIT_REF_SLUG" \
   .
